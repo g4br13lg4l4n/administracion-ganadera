@@ -1,10 +1,29 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EmployeesComponent } from './pages/employees/employees.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: EmployeesComponent,
+    data: {
+      title: 'Empleados',
+      menu: [
+        {
+          name: 'Empleados',
+          url: 'employees',
+        },
+        {
+          name: 'Admin roles',
+          url: 'employees_roles',
+        },
+      ],
+    },
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
