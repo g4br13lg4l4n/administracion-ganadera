@@ -1,0 +1,29 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { MainComponent } from './main.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: MainComponent,
+    data: {
+      title: 'Empleados',
+      menu: [
+        {
+          name: 'Empleados',
+          url: 'employees',
+        },
+        {
+          name: 'Admin roles',
+          url: 'employees_roles',
+        },
+      ],
+    },
+  },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class MainRoutingModule {}

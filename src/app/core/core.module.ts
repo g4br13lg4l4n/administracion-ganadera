@@ -5,21 +5,25 @@ import { TableComponent } from './components/table/table.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { NavegationBarComponent } from './components/navegation-bar/navegation-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LayoutsModule } from './layouts/layouts.module';
 
 @NgModule({
   declarations: [
     TopBarComponent,
     TableComponent,
+    FooterComponent,
     SpinnerComponent,
     PaginationComponent,
-    NavegationBarComponent,
+    NavegationBarComponent
   ],
   exports: [
     TopBarComponent,
     TableComponent,
+    FooterComponent,
     SpinnerComponent,
     PaginationComponent,
-    NavegationBarComponent,
+    NavegationBarComponent
   ],
   imports: [CommonModule],
 })
