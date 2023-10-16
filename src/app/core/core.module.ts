@@ -7,6 +7,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { NavegationBarComponent } from './components/navegation-bar/navegation-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutsModule } from './layouts/layouts.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,9 @@ import { LayoutsModule } from './layouts/layouts.module';
     FooterComponent,
     SpinnerComponent,
     PaginationComponent,
-    NavegationBarComponent
+    NavegationBarComponent,
+    RouterModule
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
 })
 export class CoreModule {}

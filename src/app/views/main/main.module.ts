@@ -12,9 +12,9 @@ import { MainRoutingModule } from './main-routing.module';
   ],
   imports: [
     CommonModule,
+    MainRoutingModule,
     CoreModule,
-    LayoutsModule,
-    MainRoutingModule
+    LayoutsModule
   ],
 })
 export class MainModule {}
