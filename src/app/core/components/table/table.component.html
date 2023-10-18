@@ -1,1 +1,35 @@
-<p>table works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"> {{ title }} </h4>
+                <h6 class="card-subtitle">{{ subtitle }}</h6>
+                <div class="table-responsive m-t-40" *ngIf="headTable.length">
+                    <table class="display nowrap table table-hover table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th *ngFor="let head of headTable"> {{ head }} </th>
+                            </tr>
+                        </thead>
+                        <tbody *ngIf="title == 'Personal'">
+                            <tr *ngFor="let row of ELEMENT_DATA1">
+                                <td>{{ row.position }}</td>
+                                <td> {{ row.name }} </td>
+                                <td> {{ row.weight }} </td>
+                                <td> {{ row.symbol }} </td>
+                            </tr>
+                        </tbody>
+                        <tbody *ngIf="title == 'Ganado'">
+                            <tr *ngFor="let row of ELEMENT_DATA2">
+                                <td>{{ row.position }}</td>
+                                <td> {{ row.name }} </td>
+                                <td> {{ row.weight }} </td>
+                                <td> {{ row.symbol }} </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

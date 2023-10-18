@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
 
+  headTable1: string[] = ['Nombre', 'Apellidos', 'Edad', 'Fecha de nacimiento', 'Teléfono', 'Dirección', 'Salario base']
+
+  headTable2: string[] = ['Edad', 'asdasd', 'asdsadasd', 'asdasasd']
 }
