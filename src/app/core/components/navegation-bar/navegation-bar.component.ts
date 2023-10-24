@@ -11,7 +11,7 @@ export class NavegationBarComponent {
     {
       section: 'Dashboard',
       icon: 'mdi mdi-gauge',
-      items: [{ name: 'Visualizador de datos', url: 'graficos' }],
+      items: [{ name: 'Visualizador de datos', url: 'main/graphs' }],
       divider: true
     },
     {
@@ -19,11 +19,11 @@ export class NavegationBarComponent {
       icon: 'mdi mdi-table',
       cap: 'Control administrativo',
       items: [
-        { name: 'Listado de suministros', url: 'suministros' },
-        { name: 'Listado de ganados', url: 'ganados' },
-        { name: 'Historial de ventas', url: 'ventas' },
-        { name: 'Historial de vacunas', url: 'vacunas' },
-        { name: 'Catálogo de razas', url: 'cat-razas' }
+        { name: 'Listado de suministros', url: 'main/suministros' },
+        { name: 'Listado de ganados', url: 'main/ganados' },
+        { name: 'Historial de ventas', url: 'main/ventas' },
+        { name: 'Historial de vacunas', url: 'main/vacunas' },
+        { name: 'Catálogo de razas', url: 'main/cat-razas' }
       ],
       divider: true
     },
@@ -32,8 +32,8 @@ export class NavegationBarComponent {
       icon: 'mdi mdi-book-open-variant',
       cap: 'Personal',
       items: [
-        { name: 'Listado de empleados', url: 'empleados' },
-        { name: 'Roles', url: 'roles' }
+        { name: 'Listado de empleados', url: 'main/empleados' },
+        { name: 'Roles', url: 'main/roles' }
       ],
       divider: true
     },
@@ -42,9 +42,9 @@ export class NavegationBarComponent {
       cap: 'Tools',
       icon: 'mdi mdi-widgets',
       items: [
-        { name: 'Calculadora de costos', url: 'calculadora' },
-        { name: 'Historial de tareas', url: 'tareas' },
-        { name: 'Notas', url: 'notas' }
+        { name: 'Calculadora de costos', url: 'main/calculadora' },
+        { name: 'Historial de tareas', url: 'main/tareas' },
+        { name: 'Notas', url: 'main/notas' }
       ],
     },
   ];

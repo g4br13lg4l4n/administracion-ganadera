@@ -8,7 +8,7 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       {
-        path: 'employees',
+        path: 'main',
         loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
       }
     ]

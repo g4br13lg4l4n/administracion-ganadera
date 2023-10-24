@@ -12,6 +12,7 @@ import { VaccinesComponent } from './cattle-supplies/vaccines/vaccines.component
 import { BreedsComponent } from './cattle-supplies/breeds/breeds.component';
 import { CostsCalcComponent } from './tools/costs-calc/costs-calc.component';
 import { HistoryTasksComponent } from './tools/history-tasks/history-tasks.component';
+import { NotesComponent } from './tools/notes/notes.component';
 
 
 
@@ -26,7 +27,8 @@ import { HistoryTasksComponent } from './tools/history-tasks/history-tasks.compo
     VaccinesComponent,
     BreedsComponent,
     CostsCalcComponent,
-    HistoryTasksComponent
+    HistoryTasksComponent,
+    NotesComponent,
   ],
   imports: [
     PagesRoutingModule,
