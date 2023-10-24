@@ -4,43 +4,22 @@
     <!-- Sidebar navigation-->
     <nav class="sidebar-nav">
       <ul id="sidebarnav">
-        <li class="user-profile">
-          <a
-            class="has-arrow waves-effect waves-dark"
-            [routerLink]="" routerLinkActive="has-arrow waves-effect waves-dark active"
-            aria-expanded="false"
-          >
-            <img src="../assets/images/users/profile.png" alt="user" />
-            <span class="hide-menu">Steave Jobs </span>
-          </a>
-          <ul aria-expanded="false" class="collapse">
-            <li><a href="#">My Profile </a></li>
-            <li><a href="#">My Balance</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">Account Setting</a></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </li>
-        <li class="nav-devider"></li>
-        <li class="nav-small-cap">PERSONAL</li>
-        <li>
-          <a
-            class="has-arrow waves-effect waves-dark"
-            [routerLink]=""
-            aria-expanded="false">
-            <i class="mdi mdi-gauge"></i>
-            <span class="hide-menu">
-              Dashboard
-              <span class="label label-rouded label-themecolor pull-right">4</span>
-            </span>
+        <ng-container *ngFor="let item of menu">
+          <li class="nav-small-cap"> {{ item?.cap }} </li>
+          <li class="user-profile active">
+            <a class="has-arrow waves-effect waves-dark"
+              aria-expanded="true" >
+              <i [class]="item.icon"></i>
+              <span class="hide-menu"> {{ item?.section }} </span>
             </a>
-          <ul aria-expanded="false" class="collapse">
-            <li><a href="index.html">Minimal </a></li>
-            <li><a href="index2.html">Analytical</a></li>
-            <li><a href="index3.html">Demographical</a></li>
-            <li><a href="index4.html">Modern</a></li>
-          </ul>
-        </li>
+            <ul aria-expanded="true" class="collapse in">
+              <li *ngFor="let itemMenu of item.items" routerLinkActive="active-link">
+                <a [routerLink]="itemMenu.url"> {{ itemMenu.name }} </a>
+              </li>
+            </ul>
+          </li>
+          <li *ngIf="item.divider" class="nav-devider"></li>
+        </ng-container>
       </ul>
     </nav>
     <!-- End Sidebar navigation -->

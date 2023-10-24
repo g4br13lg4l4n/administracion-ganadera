@@ -4,7 +4,7 @@ import { CoreModule } from '../../core/core.module';
 import { LayoutsModule } from 'src/app/core/layouts/layouts.module';
 import { MainComponent } from './main.component';
 import { MainRoutingModule } from './main-routing.module';
-import { EmployeesModule } from './pages/employees/employees.module';
+import { PagesModule } from './pages/pages.module';
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { EmployeesModule } from './pages/employees/employees.module';
     MainRoutingModule,
     CoreModule,
     LayoutsModule,
-    EmployeesModule
+    PagesModule
   ],
 })
 export class MainModule {}
