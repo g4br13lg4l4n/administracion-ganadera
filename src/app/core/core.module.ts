@@ -6,8 +6,10 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { NavegationBarComponent } from './components/navegation-bar/navegation-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { LayoutsModule } from './layouts/layouts.module';
 import { RouterModule } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,7 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     SpinnerComponent,
     PaginationComponent,
-    NavegationBarComponent
+    NavegationBarComponent,
   ],
   exports: [
     TopBarComponent,
@@ -25,8 +27,15 @@ import { RouterModule } from '@angular/router';
     SpinnerComponent,
     PaginationComponent,
     NavegationBarComponent,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatButtonModule,
+    MatDialogModule,
+    ReactiveFormsModule
+  ],
 })
 export class CoreModule {}
