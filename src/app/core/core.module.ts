@@ -11,6 +11,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 
+/**
+ * charts
+ */
+import { NgChartsModule } from 'ng2-charts';
+import { PieChartComponent } from './components/pie-chart/pie-chart.component';
+
 @NgModule({
   declarations: [
     TopBarComponent,
@@ -19,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SpinnerComponent,
     PaginationComponent,
     NavegationBarComponent,
+    PieChartComponent,
   ],
   exports: [
     TopBarComponent,
@@ -27,15 +34,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     SpinnerComponent,
     PaginationComponent,
     NavegationBarComponent,
-    RouterModule,
-    ReactiveFormsModule
+    PieChartComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     MatButtonModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgChartsModule
   ],
 })
 export class CoreModule {}

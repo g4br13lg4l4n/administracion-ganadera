@@ -1,1 +1,227 @@
-<p>graphs works!</p>
+<div class="container-fluid">
+  <!-- ============================================================== -->
+  <!-- Bread crumb and right sidebar toggle -->
+  <!-- ============================================================== -->
+  <div class="row page-titles">
+      <div class="col-md-5 align-self-center">
+          <h3 class="text-themecolor">Visualizador de datos</h3>
+      </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Bread crumb and right sidebar toggle -->
+  <!-- ============================================================== -->
+
+      <!-- ============================================================== -->
+      <!-- Stats box -->
+      <!-- ============================================================== -->
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="card bg-info">
+                  <div class="card-body">
+                      <div class="d-flex no-block">
+                          <div class="m-r-20 align-self-center"><img src="../assets/images/icon/income-w.png" alt="Income" /></div>
+                          <div class="align-self-center">
+                              <h6 class="text-white m-t-10 m-b-0">Total Income</h6>
+                              <h2 class="m-t-0 text-white">953,000</h2></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3">
+              <div class="card bg-success">
+                  <div class="card-body">
+                      <div class="d-flex no-block">
+                          <div class="m-r-20 align-self-center"><img src="../assets/images/icon/expense-w.png" alt="Income" /></div>
+                          <div class="align-self-center">
+                              <h6 class="text-white m-t-10 m-b-0">Total Expense</h6>
+                              <h2 class="m-t-0 text-white">236,000</h2></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3">
+              <div class="card bg-primary">
+                  <div class="card-body">
+                      <div class="d-flex no-block">
+                          <div class="m-r-20 align-self-center"><img src="../assets/images/icon/assets-w.png" alt="Income" /></div>
+                          <div class="align-self-center">
+                              <h6 class="text-white m-t-10 m-b-0">Total Assets</h6>
+                              <h2 class="m-t-0 text-white">987,563</h2></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3">
+              <div class="card bg-danger">
+                  <div class="card-body">
+                      <div class="d-flex no-block">
+                          <div class="m-r-20 align-self-center"><img src="../assets/images/icon/staff-w.png" alt="Income" /></div>
+                          <div class="align-self-center">
+                              <h6 class="text-white m-t-10 m-b-0">Total Staff</h6>
+                              <h2 class="m-t-0 text-white">987,563</h2></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- ============================================================== -->
+      <!-- Sales overview chart -->
+      <!-- ============================================================== -->
+      <div class="row">
+          <div class="col-lg-6 col-md-12">
+              <div class="card">
+                  <div class="card-body">
+                      <div class="d-flex">
+                          <div>
+                              <h3 class="card-title m-b-5"><span class="lstick"></span>Sales Overview </h3>
+                          </div>
+                          <div class="ml-auto">
+                              <select class="custom-select b-0">
+                                  <option selected="">January 2017</option>
+                                  <option value="1">February 2017</option>
+                                  <option value="2">March 2017</option>
+                                  <option value="3">April 2017</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="bg-theme stats-bar">
+                      <div class="row">
+                          <div class="col-lg-4 col-md-4">
+                              <div class="p-20 active">
+                                  <h6 class="text-white">Total Sales</h6>
+                                  <h3 class="text-white m-b-0">$10,345</h3>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-4">
+                              <div class="p-20">
+                                  <h6 class="text-white">This Month</h6>
+                                  <h3 class="text-white m-b-0">$7,589</h3>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-4">
+                              <div class="p-20">
+                                  <h6 class="text-white">This Week</h6>
+                                  <h3 class="text-white m-b-0">$1,476</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card-body">
+
+                  </div>
+              </div>
+          </div>
+          <!-- ============================================================== -->
+          <!-- visit charts-->
+          <!-- ============================================================== -->
+          <div class="col-lg-6 col-md-6">
+              <div class="card">
+                  <div class="card-body">
+                      <h4 class="card-title">
+                        <span class="lstick"></span>
+                        Ganado
+                      </h4>
+                      <ng-container *ngIf="dataChart" >
+                        <app-pie-chart [dataChart]="dataChart"></app-pie-chart>
+                      </ng-container>
+
+
+                      <table class="table vm font-14 m-b-0">
+                          <tr>
+                              <td class="b-0">Mobile</td>
+                              <td class="text-right font-medium b-0">38.5%</td>
+                          </tr>
+                          <tr>
+                              <td>Tablet</td>
+                              <td class="text-right font-medium">30.8%</td>
+                          </tr>
+                          <tr>
+                              <td>Desktop</td>
+                              <td class="text-right font-medium">7.7%</td>
+                          </tr>
+                          <tr>
+                              <td>Other</td>
+                              <td class="text-right font-medium">23.1%</td>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- ============================================================== -->
+      <!-- Subscribe -->
+      <!-- ============================================================== -->
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="card bg-success text-white">
+                          <div class="card-body">
+                              <div class="d-flex">
+                                  <div class="stats">
+                                      <h1 class="text-white">9062+</h1>
+                                      <h6 class="text-white">Subscribe</h6>
+                                      <button class="btn btn-rounded btn-outline btn-light m-t-10 font-14">Check list</button>
+                                  </div>
+                                  <div class="stats-icon text-right ml-auto"><i class="fa fa-envelope display-5 op-3 text-dark"></i></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-12">
+                      <div class="card bg-primary text-white">
+                          <div class="card-body">
+                              <div class="d-flex">
+                                  <div class="stats">
+                                      <h1 class="text-white">6509+</h1>
+                                      <h6 class="text-white">Facebook Likes</h6>
+                                      <button class="btn btn-rounded btn-outline btn-light m-t-10 font-14">Check list</button>
+                                  </div>
+                                  <div class="stats-icon text-right ml-auto"><i class="fa fa-facebook display-5 op-3 text-dark"></i></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-12">
+                      <div class="card bg-info text-white">
+                          <div class="card-body">
+                              <div class="d-flex">
+                                  <div class="stats">
+                                      <h1 class="text-white">3257+</h1>
+                                      <h6 class="text-white">Twitter Followers</h6>
+                                      <button class="btn btn-rounded btn-outline btn-light m-t-10 font-14">Check list</button>
+                                  </div>
+                                  <div class="stats-icon text-right ml-auto"><i class="fa fa-twitter display-5 op-3 text-dark"></i></div>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-8">
+              <div class="card">
+                  <div class="card-body">
+                      <div class="d-flex">
+                          <h4 class="card-title"><span class="lstick"></span>Website Visit</h4>
+                          <ul class="list-inline m-b-0 ml-auto">
+                              <li>
+                                  <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Site A view</h6> </li>
+                              <li>
+                                  <h6 class="text-muted text-info"><i class="fa fa-circle font-10 m-r-10"></i>Site B view</h6> </li>
+                          </ul>
+                      </div>
+                      <div class="text-center m-t-30">
+                          <div class="btn-group " role="group" aria-label="Basic example">
+                              <button type="button" class="btn btn-sm btn-secondary">PAGEVIEWS</button>
+                              <button type="button" class="btn btn-sm btn-secondary">REFERRALS</button>
+                          </div>
+                      </div>
+                      <div class="website-visitor p-relative m-t-30" style="height:355px; width:100%;"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>

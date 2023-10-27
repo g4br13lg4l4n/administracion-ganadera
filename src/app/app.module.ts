@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { LayoutsModule } from './core/layouts/layouts.module';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +15,8 @@ import { LayoutsModule } from './core/layouts/layouts.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     CoreModule,
-    LayoutsModule
+    LayoutsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
