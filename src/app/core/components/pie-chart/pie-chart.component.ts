@@ -23,7 +23,7 @@ export class PieChartComponent {
   }
 
   // Pie
-  pieChartOptions: ChartConfiguration['options'] = {
+  chartOptions: ChartConfiguration['options'] = {
     responsive: true,
     plugins: {
       legend: {
@@ -40,14 +40,14 @@ export class PieChartComponent {
     }
   }
 
-  get pieChartData(): ChartData {
+  get chartData(): ChartData {
     return this.dataChart.data;
   }
 
-  get pieChartType(): ChartType {
+  get chartType(): ChartType {
     return this.dataChart?.type;
   }
-  pieChartPlugins = [DatalabelsPlugin];
+  chartPlugins = [DatalabelsPlugin];
 
   // Reload chart when is resized the screen
   @HostListener('window:resize', ['$event'])

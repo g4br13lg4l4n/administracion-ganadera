@@ -10,12 +10,15 @@ import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PieChartComponent } from './components/pie-chart/pie-chart.component';
+import { CardInfoComponent } from './components/card-info/card-info.component';
 
 /**
  * charts
  */
 import { NgChartsModule } from 'ng2-charts';
-import { PieChartComponent } from './components/pie-chart/pie-chart.component';
+import { StatsBarComponent } from './components/stats-bar/stats-bar.component';
+import { WrapperCardComponent } from './components/wrapper-card/wrapper-card.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { PieChartComponent } from './components/pie-chart/pie-chart.component';
     PaginationComponent,
     NavegationBarComponent,
     PieChartComponent,
+    CardInfoComponent,
+    StatsBarComponent,
+    WrapperCardComponent
   ],
   exports: [
     TopBarComponent,
@@ -34,7 +40,10 @@ import { PieChartComponent } from './components/pie-chart/pie-chart.component';
     SpinnerComponent,
     PaginationComponent,
     NavegationBarComponent,
-    PieChartComponent
+    PieChartComponent,
+    CardInfoComponent,
+    StatsBarComponent,
+    WrapperCardComponent
   ],
   imports: [
     CommonModule,

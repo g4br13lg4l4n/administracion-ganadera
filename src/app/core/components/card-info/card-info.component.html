@@ -1,0 +1,13 @@
+<div [class]="BgType + ' card'">
+  <div class="card-body p-3">
+    <div class="d-flex no-block">
+      <div class="m-r-20 align-self-center">
+        <img *ngIf="Icon" [src]="Icon" alt="Income" />
+      </div>
+      <div class="align-self-center">
+        <h6 class="text-white m-t-10 m-b-0">{{ Title }}</h6>
+        <h2 class="m-t-0 text-white">{{ Text }}</h2>
+      </div>
+    </div>
+  </div>
+</div>
