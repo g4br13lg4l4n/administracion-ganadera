@@ -8,7 +8,7 @@ import { FormModalVaccinesComponent } from '../../../components/form-modal-vacci
   styleUrls: ['./vaccines.component.css']
 })
 export class VaccinesComponent {
-  columnsTable = ['ID', 'Nombre de la Raza', 'Origen'];
+  columnsTable = ['ID', 'Nombre vacuna', 'Fecha aplicación', 'Motivo aplicación', 'Opciones'];
 
   constructor(public dialog: MatDialog) {}
 

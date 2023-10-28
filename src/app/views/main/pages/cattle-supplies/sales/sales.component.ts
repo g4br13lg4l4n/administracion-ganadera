@@ -8,7 +8,7 @@ import { FormModalSalesComponent } from '../../../components/form-modal-sales/fo
   styleUrls: ['./sales.component.css']
 })
 export class SalesComponent {
-  columnsTable = ['ID', 'Nombre de la Raza', 'Origen'];
+  columnsTable = ['ID', 'Tipo venta', 'Fecha venta', 'Valor de venta', 'Peso estimado vendido', 'Opciones'];
 
   constructor(public dialog: MatDialog) {}
 

@@ -8,7 +8,7 @@ import { FormModalSuppliesComponent } from '../../../components/form-modal-suppl
   styleUrls: ['./supplies.component.css']
 })
 export class SuppliesComponent {
-  columnsTable = ['ID', 'Nombre de la Raza', 'Origen'];
+  columnsTable = ['ID', 'Nombre del suministro', 'Tipo suministro', 'Valor estimado', 'Cantidad', 'Fecha de compra', 'Fecha de caducidad', 'Estatus', 'Opciones'];
 
   constructor(public dialog: MatDialog) {}
 

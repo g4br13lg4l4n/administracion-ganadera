@@ -8,7 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./cattle.component.css']
 })
 export class CattleComponent {
-  columnsTable = ['ID', 'Nombre de la Raza', 'Origen'];
+  columnsTable = ['ID', 'Número de registro', 'Tipo de animal', 'Raza', 'Fecha nacimiento', 'Estatus', 'Valor estimado', 'Rancho asignado', 'Opciones'];
 
   constructor(public dialog: MatDialog) {}
 
