@@ -12,8 +12,12 @@ export class BreedsComponent {
 
   constructor(public dialog: MatDialog) {}
 
-  openDialog() {
-    const dialogRef = this.dialog.open(FormModalBreedsComponent);
+  openDialog(option: string): void {
+    const dialogRef = this.dialog.open(FormModalBreedsComponent, {
+      data: {
+        option
+      }
+    });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

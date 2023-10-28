@@ -1,20 +1,30 @@
 <div class="modal-content">
   <div class="modal-header">
     <h4 class="modal-title" id="myModalLabel">Formulario Raza</h4>
-    <button type="button" class="close" (click)="close()" aria-hidden="true"> <i class="mdi mdi-close"></i> </button>
+    <button type="button" class="close" (click)="close()" aria-hidden="true">
+      <i class="mdi mdi-close"></i>
+    </button>
   </div>
   <div class="modal-body">
     <form class="form-horizontal form-material">
       <div class="form-group">
         <div class="col-md-12 m-b-20">
-          <input type="text" class="form-control" placeholder="Nombre de la raza" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre de la raza"
+          />
         </div>
         <div class="col-md-12 m-b-20">
-          <input type="text" class="form-control" placeholder="Origen de la raza" />
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Origen de la raza"
+          />
         </div>
         <div class="col-md-12 m-b-20">
           <label>Agregar imagen</label>
-            <input type="file" class="form-control" />
+          <input type="file" class="form-control" />
         </div>
       </div>
     </form>
@@ -23,7 +33,7 @@
     <button
       type="button"
       class="btn btn-info waves-effect"
-      data-dismiss="modal">
+      data-dismiss="modal" >
       Guardar
     </button>
     <button
