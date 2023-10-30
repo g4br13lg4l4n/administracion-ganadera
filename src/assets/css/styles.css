@@ -5842,3 +5842,7 @@ File: scss
     text-align: center;
     margin-top: 10px;
     overflow: hidden; } }
+
+    .cdk-global-overlay-wrapper {
+      overflow-y: scroll;
+    }

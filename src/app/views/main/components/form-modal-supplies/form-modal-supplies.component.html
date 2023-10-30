@@ -1,1 +1,99 @@
-<p>form-modal-supplies works!</p>
+<div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title" id="myModalLabel">Formulario Suministros</h4>
+      <button type="button" class="close" (click)="close()" aria-hidden="true">
+        <i class="mdi mdi-close"></i>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form class="form-horizontal form-material">
+        <div class="form-group">
+          <div class="col-md-12 m-b-20">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nombre suministros"
+            />
+          </div>
+          <div class="col-md-12 m-b-20">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Tipos suministros"
+            />
+          </div>
+          <div class="col-md-12 m-b-20">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Valor suministro"
+            />
+          </div>
+          <div class="col-md-12 m-b-20">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Cantidad"
+            />
+          </div>
+          <div class="col-md-12 m-b-20">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Fecha compra"
+            />
+          </div>
+          <div class="col-md-12 m-b-20">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Fecha caducidad"
+            />
+          </div>
+          <div class="col-md-12 m-b-20">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Estatus"
+            />
+          </div>
+          <div class="col-md-12 m-b-20">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Motivo baja"
+            />
+          </div>
+          <div class="col-md-12 m-b-20">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Fecha baja"
+            />
+          </div>
+          <div class="col-md-12 m-b-20">
+            <label for="">Factura</label>
+            <input
+              type="file"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-info waves-effect"
+        data-dismiss="modal" >
+        Guardar
+      </button>
+      <button
+        type="button"
+        class="btn btn-default waves-effect"
+        (click)="close()">
+        Cancelar
+      </button>
+    </div>
+  </div>
+  
