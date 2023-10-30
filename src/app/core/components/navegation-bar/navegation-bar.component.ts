@@ -1,12 +1,34 @@
 import { Component } from '@angular/core';
 import { Menu } from '../../models/menu';
 
+declare var $: any;
+
 @Component({
   selector: 'app-navegation-bar',
   templateUrl: './navegation-bar.component.html',
   styleUrls: ['./navegation-bar.component.css']
 })
+
 export class NavegationBarComponent {
+
+  goToPage(event: Event): void {
+    const getCollapse = $(event.target).siblings('.collapse');
+    if (getCollapse.length) {
+      this.addRemoveClass(getCollapse);
+      return;
+    }
+
+    const getCollapseItem = $(event.target).parent('.item-menu').siblings('.collapse');
+    if (getCollapseItem.length) {
+      this.addRemoveClass(getCollapseItem);
+    }
+  }
+
+  addRemoveClass(element: any): void {
+    element.toggleClass('in');
+    element.parent('.user-profile').toggleClass('active');
+  }
+
   menu: Menu[] = [
     {
       section: 'Dashboard',
