@@ -36,7 +36,6 @@
               "src/assets/js/bootstrap.min.js",
               "src/assets/js/perfect-scrollbar.jquery.min.js",
               "src/assets/js/waves.js",
-              "src/assets/js/sidebarmenu.js",
               "src/assets/js/custom.min.js"
             ]
           },
