@@ -12,8 +12,8 @@
               <span class="hide-menu"> {{ item?.section }} </span>
             </a>
             <ul class="collapse">
-              <li *ngFor="let itemMenu of item.items" routerLinkActive="active-link">
-                <a [routerLink]="itemMenu.url"> {{ itemMenu.name }} </a>
+              <li *ngFor="let itemMenu of item.items" routerLinkActive="active">
+                <a [routerLink]="itemMenu.url" routerLinkActive="active"> {{ itemMenu.name }} </a>
               </li>
             </ul>
           </li>
