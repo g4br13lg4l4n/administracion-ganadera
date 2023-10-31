@@ -1,12 +1,42 @@
 <div class="row p-4">
-  <div class="col">
-    <button
-      type="button"
-      class="btn btn-info btn-rounded"
-      (click)="openDialog('create')">
-      Agregar Ganados
-    </button>
-  </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="contact-page-aside">
+                <div class="left-aside bg-light-part">
+                    <ul class="list-style-none">
+                        <li class="box-label">
+                            <a href="javascript:void(0)">Todo<span>103</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="javascript:void(0)">Vacas <span>103</span></a>
+                        </li>
+                        <li class="box-label">
+                            <button type="button" class="btn btn-info btn-rounded" (click)="openDialog('create')">
+                                Agregar Ganados
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-aside">
+                    <div class="right-page-header">
+                        <div class="d-flex">
+                            <div class="align-self-center">
+                                <h4 class="card-title m-t-10">Listado de ganado</h4>
+                            </div>
+                            <div class="ml-auto">
+                                <input 
+                                    type="text"
+                                    placeholder="Buscar"
+                                    class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <app-table [headTable]="columnsTable"></app-table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-<app-table [headTable]="columnsTable"></app-table>

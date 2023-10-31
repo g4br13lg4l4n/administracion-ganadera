@@ -42,7 +42,7 @@ export class NavegationBarComponent {
       cap: 'Control administrativo',
       items: [
         { name: 'Listado de suministros', url: 'main/suministros' },
-        { name: 'Listado de ganados', url: 'main/ganados' },
+        { name: 'Listado de ganado', url: 'main/ganados' },
         { name: 'Historial de ventas', url: 'main/ventas' },
         { name: 'Historial de vacunas', url: 'main/vacunas' },
         { name: 'Catálogo de razas', url: 'main/cat-razas' }
