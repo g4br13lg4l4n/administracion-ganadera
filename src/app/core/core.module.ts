@@ -9,7 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { CardInfoComponent } from './components/card-info/card-info.component';
 
@@ -43,7 +43,9 @@ import { WrapperCardComponent } from './components/wrapper-card/wrapper-card.com
     PieChartComponent,
     CardInfoComponent,
     StatsBarComponent,
-    WrapperCardComponent
+    WrapperCardComponent,
+    FormsModule,
+    ReactiveFormsModule
   ],
   imports: [
     CommonModule,
@@ -51,7 +53,8 @@ import { WrapperCardComponent } from './components/wrapper-card/wrapper-card.com
     MatButtonModule,
     MatDialogModule,
     ReactiveFormsModule,
-    NgChartsModule
+    NgChartsModule,
+    FormsModule,
   ],
 })
 export class CoreModule {}
