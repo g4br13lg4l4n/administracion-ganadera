@@ -1,4 +1,5 @@
 import { Component, Inject } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { DialogOptions } from 'src/app/core/models/dialogOptions';
 
@@ -9,11 +10,26 @@ import { DialogOptions } from 'src/app/core/models/dialogOptions';
 })
 export class FormModalEmployeesComponent {
 
+  formEmployees: FormGroup;
+
   constructor(
     public dialogRef: MatDialogRef<FormModalEmployeesComponent>,
+    public fb: FormBuilder,
     @Inject(MAT_DIALOG_DATA) public data: DialogOptions
-  ){
-    console.log('-->', this.data)
+  ) {
+    this.formEmployees = this.fb.group({
+      nombre: ['', [Validators.required]],
+      apellidos: ['', [Validators.required]],
+      edad: [],
+      fchNacimiento: [],
+      telefono: [],
+      direccion: [],
+      salarioBase: ['', [Validators.required]]
+    })
+  }
+
+  guardar(): void {
+    console.log(this.formEmployees.getRawValue());
   }
 
   close(): void {

@@ -6,10 +6,11 @@
     </button>
   </div>
   <div class="modal-body">
-    <form class="form-horizontal form-material">
+    <form class="form-horizontal form-material" [formGroup]="formBreeds">
       <div class="form-group">
         <div class="col-md-12 m-b-20">
           <input
+            formControlName="nombreRaza"
             type="text"
             class="form-control"
             placeholder="Nombre de la raza"
@@ -17,23 +18,25 @@
         </div>
         <div class="col-md-12 m-b-20">
           <input
+            formControlName="origenRaza"
             type="text"
             class="form-control"
             placeholder="Origen de la raza"
           />
         </div>
         <div class="col-md-12 m-b-20">
-          <label>Agregar imagen</label>
-          <input type="file" class="form-control" />
+          <label>Imagen de la raza</label>
+          <input formControlName="razaImagen" type="file" class="form-control" />
         </div>
       </div>
     </form>
   </div>
   <div class="modal-footer">
     <button
+      (click)="guardar()"
       type="button"
       class="btn btn-info waves-effect"
-      data-dismiss="modal" >
+      data-dismiss="modal">
       Guardar
     </button>
     <button
